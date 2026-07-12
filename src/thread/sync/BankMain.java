@@ -8,9 +8,10 @@ import static util.MyLogger.*;
 public class BankMain {
 
     public static void main(String[] args) throws InterruptedException {
-        BankAccount account = new BankAccountV1(10000);
+//        BankAccount account = new BankAccountV1(10000);
 //        BankAccount account = new BankAccountV2(10000);
 //        BankAccount account = new BankAccountV3(10000);
+        BankAccount account = new BankAccountV4(10000);
         Thread t1 = new Thread(new WithdrawTask(8000, account), "t1");
         Thread t2 = new Thread(new WithdrawTask(8000, account), "t2");
 
