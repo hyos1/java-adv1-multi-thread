@@ -15,7 +15,8 @@ public class BoundedMain {
     public static void main(String[] args) {
         // 1. BoundedQueue
 //        BoundedQueue queue = new BoundedQueueV1(2);
-        BoundedQueue queue = new BoundedQueueV2(2);
+//        BoundedQueue queue = new BoundedQueueV2(2);
+        BoundedQueue queue = new BoundedQueueV3(2);
 
         // 2. 생산자 소비가 실행 순서 선택, 반드시 하나만 선택
 //        producerFirst(queue); // 생산자 먼저 실행
