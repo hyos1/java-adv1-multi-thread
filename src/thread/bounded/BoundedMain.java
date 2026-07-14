@@ -19,8 +19,8 @@ public class BoundedMain {
         BoundedQueue queue = new BoundedQueueV3(2);
 
         // 2. 생산자 소비가 실행 순서 선택, 반드시 하나만 선택
-//        producerFirst(queue); // 생산자 먼저 실행
-        consumeFirst(queue); // 소비자 먼저 실행
+        producerFirst(queue); // 생산자 먼저 실행
+//        consumeFirst(queue); // 소비자 먼저 실행
     }
 
     private static void producerFirst(BoundedQueue queue) {
