@@ -10,7 +10,8 @@ import static util.MyLogger.*;
 public class SimpleListMainV2 {
 
     public static void main(String[] args) throws InterruptedException {
-        test(new BasicList());
+//        test(new BasicList());
+        test(new SyncList());
     }
 
     public static void test(SimpleList list) throws InterruptedException {
